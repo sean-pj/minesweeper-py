@@ -1,0 +1,9 @@
+Minesweeper is a single player strategy game. The game is played on a 2D grid of tiles. These tiles obscure a certain number of bombs randomly hidden under them. Tiles that aren't assigned a bomb hidden in them instead contain a number that reveal how many bombs are adjacent to that tile. For example, if there is a bomb one tile down from a square and another bomb one tile up, the value of the number would be 2. Players use these numbers to identify where bombs may be. Use them in a smart way and you can often guarantee that a tile contains a bomb without leaving it to chance!
+
+ The player can either left click to reveal what's under each tile (a bomb or a number) or right click to change the color of that box to red. This allows players to mark visually a tile they suspect is a bomb. 
+
+The game is won when all bombs are found. Meaning that all tiles that are not bombs are revealed. Conversely, the game is immediately lost when a tile containing a bomb is clicked/revealed.
+
+The game starts when a random tile is selected, the game will ensure that a player's first move will never result in a loss. Then players use the information they have with number tiles to locate bombs and reveal safe or empty tiles. 
+
+A key feature of the game will be removing zeros, or number tiles that contain a value of zero. When a player clicks on a zeros,  all other adjacent zeros should be removed. This is a quality of life feature that prevents players from having to clear tiles that are obviously not bombs. (since a zero tile would mean that all adjacent tiles don't contain a bomb)
